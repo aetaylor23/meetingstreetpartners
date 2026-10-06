@@ -4,59 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Street Partners</title>
+
     <style>
-body {
-    background-image: url('background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-</style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.55);
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 50px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        .menu a:hover {
+            opacity: .8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: white;
+            color: #0f172a;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: rgba(255,255,255,.15);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 30px;
+        }
+    </style>
 </head>
 
-<body
-    <nav style="
-    padding: 15px;
-    text-align: center;
-">
-    <a href        About
-    </a>
+<body>
 
-    <a href="#        Services
-    </a>
+<div class="overlay">
 
-    <a href="#contact" style="color:>
-</nav>
+    <nav>
+        <div class="logo">Meeting Street Partners</div>
 
-<div style="
-    font-family: Arial, sans-serif;
-    margin: 40px;
-">
+        <div class="menu">
+            <aboutAbout</a>
+            <a href="#services">Services</a   #contactContact</a>
+        </div>
+    </nav>
 
-    <h1>Meeting Street Partners</h1>
+    <section class="hero">
+        <h1>Meeting Street Partners</h1>
+        <p>Science. Strategy. Results.</p>
 
-    <p>Science. Strategy. Results.</p>
+        <aontactGet In Touch</a>
+    </section>
 
-    <h2 id="about">About Us</h2>
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            Meeting Street Partners provides consulting,
+            project management, operational support,
+            and business solutions.
+        </p>
+    </section>
 
-    <p>
-        Meeting Street Partners provides consulting,
-        project management, operational support, and business solutions.
-    </p>
+    <section id="services">
+        <h2>Services</h2>
 
-    <h2 id="services">Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Consulting</h3>
+            </div>
 
-    <ul>
-        <li>Consulting</li>
-        <li>Project Management</li>
-        <li>Business Operations</li>
-    </ul>
+            <div class="card">
+                <h3>Project Management</h3>
+            </div>
 
-    <h2 id="contact">Contact</h2>
+            <div class="card">
+                <h3>Business Operations</h3>
+            </div>
+        </div>
+    </section>
 
-    <p>IT@meetingstreetpartners.com</p>
-    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>IT@meetingstreetpartners.com</p>
+    </section>
+
 </div>
+
 </body>
 </html>
